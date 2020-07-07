@@ -1,0 +1,733 @@
+*{margin: 0;padding: 0;}
+ul li{list-style: none;}
+body{font-family: "微软雅黑";}
+a{text-decoration: none;font-size: 16px;color: #666;}
+a img{border: 0;}
+p{font-size: 16px;color: #666;line-height: 30px;}
+input{border: none;outline: none;}
+.anis{
+	transition: width 1s;
+-moz-transition: width 1s;	/* Firefox 4 */
+-webkit-transition: width 1s;	/* Safari 和 Chrome */
+-o-transition: width 1s;	/* Opera */
+}
+#headerT {height: 75px;border-bottom: 1px solid #f4f4f4;padding: 0 10% ;}
+#headerT p{line-height: 75px;float: left;}
+#headerT div{float: right;margin-top: 20px;overflow: auto;zoom: 1;}
+#headerT div img{width:calc(100% - 140px);float: left;margin-right: 10px;}
+#headerT div a{float: right;width: 130px;}
+#headerT div a span{display: block;color: #887d64;font-weight: bold;}
+#headerD{height: 100px;margin: 0 auto;padding-left: 10%;}
+#logo{width:230px;margin: 15px 5% 0 0;display: block;float: left;}
+#logo img{display: block;width: 100%;}
+#headerD nav{width: calc(90% - 230px);float: left;margin-top:40px;}
+#headerD nav ul {overflow: auto;zoom: 1;}
+#headerD ul li{float: left;width: 11.1%;text-align: center;height: 60px;}
+#headerD ul li a{padding-bottom: 5px;border-bottom: 2px solid #fff;color: #4c4c4c;}
+/*#headerD ul li:first-child a,#headerD ul li a:hover{border-bottom-color: #bb997b;}*/
+#headerD ul li.on a{border-bottom-color: #bb997b;}
+
+.jdfyq ul li.current{background-color:#bb997b;color:#fff}
+.jdfyq ul li.current a{color:#fff}
+/*header header header header header header */
+/*header header header header header header */
+#banner{width: 100%;overflow: auto;}
+#banner a{display: block;height: 900px;background-size: cover; background-position: center center; background-repeat: no-repeat;width: 100%;}
+/*#banner img{width: 100%;display: block;}*/
+#navSh{float: right;width: 30px; height: 50px;margin: 35px 15% 0 0;display: none;}
+#navSh img{display: block;width: 100%;}
+#swiper1 .swiper-pagination-bullet{width: 16px;height: 16px;background-color:rgba(187,153,123,1)}
+#swiper1 .swiper-pagination-bullet-active{background:url(../img/banners.png)no-repeat center center;width: 16px;height: 16px;}
+
+.syrzxz{width: 80%;margin-left: 10%;}
+.syrzxz input{width: 20%;float: left;}
+/*banner banner banner banner banner banner */
+.main{padding: 85px 10%;margin: 0 auto;background-color: #fafafa;}
+.sygywm{padding:  0;overflow: auto;}
+.sygywmL{width: 40%;float:left;}
+.sygywmL img{width: 100%;display: block;max-width: 610px;margin: 0 auto;}
+.sygywmR{width: 55%;float: right;}
+.sygywmR h3{margin-top:20px;font-size: 30px;color: #bb997b;}
+.sygywmR>p{margin: 40px 0;line-height: 40px;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;}
+.sygywmR ul{overflow: auto;}
+.sygywmR ul li{float: left;width: calc(25% - 41px);padding: 0 20px;border-right: 1px solid #ccc;}
+.sygywmR ul li p{text-align: center;font-size: 14px;height: 60px;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;}
+.sygywmR ul li i{display: block;font-size: 50px;color: #bb997b;padding: 20px 0;text-align: center;}
+.sygywmR ul li:last-child{border: none;}
+.sygywmR a{line-height: 30px;margin-top: 30px;display: block;}
+.sygywmR a i{color: #bb997b;font-size:30px;padding-right: 10px;float: left;}
+/* 首页-关于我们 首页-关于我们 首页-关于我们 首页-关于我们*/
+.main2{width: 80%;margin: 0 auto 50px;}
+.main2 h2{text-align: center;font-size: 35px;font-weight: normal;color: #bb997b;padding: 50px 0;background: url(../img/syjdzsbg.png)no-repeat center center;}
+.main2 h2 span{font-size: 20px;display: block;}
+
+.sygfzs{padding:0; position:relative;}
+.sygfzs .swiper-button-prev{background: url(../img/swiperL.png) no-repeat left center;outline: none;margin-left: -45px;}
+.sygfzs .swiper-button-next{background: url(../img/swiperR.png) no-repeat right center;outline: none;margin-right: -45px;}
+
+#swiper2 ul{width: 100%;}
+#swiper2 ul li{width: 25%;position: relative;float: left;height: 610px;background-size: cover; background-position: center center; background-repeat: no-repeat;}
+/*#swiper2 ul li img{width: 100%;margin: 0 auto;display: block;
+-webkit-user-select:none; 
+-moz-user-select:none; 
+-ms-user-select:none; 
+user-select:none;}*/
+#swiper2 ul li .sykfzsfm{height: 100%;width: 100%;position: absolute;background-color: rgba(0,0,0,0.3);bottom: 0;left: 0;}
+#swiper2 ul li .sykfzsfm p{width:100%;text-align: center;color: #fff;font-size: 25px;position: absolute;top:50%;margin-top: -77.5px;}
+#swiper2 ul li .sykfzsfm p span{display: block;font-size: 18px;margin: 10px 0;}
+#swiper2 ul li .sykfzsfm a{color: #000;display: none;line-height: 30px;position: absolute;left:calc(50% - 55px);bottom:20%;margin-bottom: -15px;}
+#swiper2 ul li .sykfzsfm a i{color: #fff;font-size:30px;float: left;padding-right: 5px;}
+#swiper2 ul li:hover .sykfzsfm{height: 40%;background-color: #bb997b;
+transition: height 1s;
+-moz-transition: height 1s;	/* Firefox 4 */
+-webkit-transition: height 1s;	/* Safari 和 Chrome */
+-o-transition: height 1s;	/* Opera */}
+#swiper2 ul li:hover .sykfzsfm p{top:40%;margin-top: -38.5px;}
+#swiper2 ul li:hover .sykfzsfm p span:first-child,#swiper2 ul li:hover .sykfzsfm p span:last-child{display: none;}
+#swiper2 ul li:hover .sykfzsfm a{display: block;}
+/* 首页-客房介绍 首页-客房介绍 首页-客房介绍 首页-客房介绍 首页-客房介绍*/
+.main3 video{width: 100%;height: 100%;max-height: 500px;}
+.main4{padding: 50px 10% 70px;margin: 10px auto 0;background-color: #fafafa;}
+.main4 h2{text-align: center;font-size: 35px;font-weight: normal;color: #bb997b;margin-bottom: 50px}
+.main4 h2 span{font-size: 20px;display: block;}
+.syjddt{overflow: auto;overflow: auto;zoom: 1}
+.syjddt dl{width:32% ;float: left;margin-right: 2%;background-color: #fff}
+.syjddt dl:last-child{margin-right: 0;}
+.syjddt dl dt img{display: block;width: 100%;}
+.syjddt dl dd{padding: 40px 25px ;}
+.syjddt dl dd h3{font-size: 16px;color: #333;}
+.syjddt dl dd p.syjddtjs{font-size: 14px;line-height: 25px;padding-top: 30px;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.syjddt dl dd p.syjddtsj{margin: 20px 0;font-size: 14px;line-height: 25px;padding: 0;}
+.syjddt dl dd a{overflow: auto;display: block;line-height: 30px;}
+.syjddt dl dd a i{font-size: 30px;float: left;margin-right: 20px;color:#bb997b}
+/*首页-酒店动态首页-酒店动态首页-酒店动态首页-酒店动态首页-酒店动态首页-酒店动态首页-酒店动态首页-酒店动态*/
+footer{background-color: #bb997b;}
+.footer{width: 80%;margin: 0 auto;overflow: auto;padding: 80px 0;}
+.footer ul{float: left;width: 13%;}
+.footer ul:last-child{width: 22%;}
+.footer ul li{padding-top: 15px;}
+.footer ul li:nth-child(2){padding-top: 40px;}
+.footer ul li:first-child a{font-size: 16px;color: #fff;border-bottom: 1px solid #fff;padding-bottom: 20px;}
+.footer ul li a{font-size: 14px;color: #fff;}
+.footerD{padding: 30px 10%;border-top: 1px solid #c9ad95;overflow: auto;}
+.footerD p{color: #fff;font-size: 14px}
+.footerD p:first-child{float: left;}
+.footerD p:nth-child(2){float: left;margin-left: 5%;}
+.footerD p:last-child{float: right;}
+/*footer footer footer footer footer footer footer footer*/
+.ejym{width: 100%;overflow: auto;zoom: 1;}
+.ejymH{width: 100%;position:relative;height: 560px;background-size: cover; background-position: center center; background-repeat: no-repeat;}
+/*.ejymH>img{display: block;width: 100%;}*/
+.ejymDW{width:100%;height:60px;position:absolute;bottom:0;left:0;background-color: rgba(187,153,123,0.8);}
+.ejymDW a{color: #fff;}
+.ejymMbdh{float: left;margin-left: 10%;line-height: 60px;}
+.ejymNavSh{width: 30px;height: 30px;display: none;float: right;padding-top: 15px;margin-right: 10%;}
+.ejymNavSh img{display: block;width: 100%;}
+.ejymNav{float: right;margin-right: 10%;}
+.ejymNav ul{overflow: auto}
+.ejymNav ul li{float: left;}
+.ejymNav ul li a{border-left: 1px solid #fff;padding: 0 20px;line-height: 57px;}
+.ejymNav ul li:first-child a{border: 0;}
+.ejymNav ul li:hover,.ejymNav ul li.ejymYs{border-bottom: 3px solid #fff;}
+/*ejym ejym ejym ejym ejym ejym ejym ejym ejym ejym ejym */
+.ejymNr{width: 80%;margin: 30px auto 50px;}
+.ejymNr>h3{font-size: 20px;color: #bb997b;text-align: center;padding: 20px 0 30px;}
+.ejymNr>h3 span{display: block;}
+
+.jdjj dl{overflow: auto;}
+.jdjj dl dt{float: left;width: 45%;margin-right: 2%;}
+.jdjj dl dt img{display: block;width: 100%;}
+.jdjj p{line-height: 30px;text-indent: 2em;margin-top: 40px;}
+.jdjj ul {margin: 30px 0;overflow: auto;}
+.jdjj ul li{float: left;width: 16.66%;position: relative;}
+.jdjj ul li img{width: 100%;display: block;}
+.jdjj ul li div{position: absolute;top: calc(50% - 50px);background-color: rgba(0,0,0,0.4);width: 100%;padding: 20px 0;}
+.jdjj ul li div a{text-align: center;display: block;font-size: 20px;color: #fff;line-height: 28px;}
+.jdjj ul li div a span{display: block;}
+/* 酒店简介 酒店简介 酒店简介 酒店简介 酒店简介*/
+.jdzs{padding: 60px 0;}
+.jdzs:nth-child(2n+1){background-color: #fafafa}
+.jdzsxq{width: 80%;margin: 0 auto;position: relative;}
+.jdzsxq .swiper-button-prev{background: url(../img/swiperL.png) no-repeat left center;outline: none;margin: 40px 0 0 -50px;}
+.jdzsxq .swiper-button-next{background: url(../img/swiperR.png) no-repeat right center;outline: none;margin: 40px -50px 0 0;}
+.jdzsxq h3{text-align: center;font-size: 30px;font-weight: normal;color: #bb997b;padding-bottom: 20px;}
+.jdzsxq h3 span{display: block;}
+.jdzsxq ul{width: calc(100% - 40px);}
+.jdzsxq ul li{width: 33.33%;}
+.jdzsxq ul li img{display: block;width: 100%;
+-webkit-user-select:none; 
+-moz-user-select:none; 
+-ms-user-select:none; 
+user-select:none;
+}
+.jdzsxq dl dd {text-align: center;line-height: 30px;color: #bb997b;}
+/* 酒店展示 酒店展示 酒店展示 酒店展示 酒店展示 */
+.dlwz{overflow: auto;}
+.dlwz p{text-align: center;line-height: 35px;margin-bottom: 60px;}
+.dlwzLxfs{float: left;background-color: #fafafa;padding: 50px 3%;width: 34%;}
+.dlwzLxfs div{margin-top: 30px;}
+.dlwzLxfs div:first-child{margin-top: 0;}
+.dlwzLxfs div a{font-size: 18px;color: #010101;display:block;background: url(../img/dlwx-tel.png) no-repeat center left;padding-left: 60px;}
+.dlwzLxfs div a span{font-size: 16px;color: #333;display: block;margin-top: 5px;}
+.dlwzLxfs div:nth-child(2) a{background: url(../img/dlwx-dz.png) no-repeat center left;}
+.dlwzLxfs div:nth-child(3) a{background: url(../img/dlwx-cz.png) no-repeat center left;}
+.dlwzLxfs div:last-child a{background: url(../img/dlwx-dh.png) no-repeat center left;}
+.dlwzDt{float: left;width: 60%;}
+/*地理位置 地理位置 地理位置 地理位置 地理位置 地理位置*/
+.jddt{overflow: auto;zoom: 1;}
+.jddt dl{padding: 20px;border: 1px solid #e5e5e5;overflow: auto;zoom: 1;margin-top: 30px;}
+.jddt dl:first-child{margin-top: 0;}
+.jddt dl dt{float: left;width: 45%;margin-right: 3%;}
+.jddt dl dt img{width: 100%;display: block;}
+.jddt dl dd{float:left;width: 52%;}
+.jddt dl dd h4{font-size: 16px;color: #333;padding: 20px 0;}
+.jddt dl dd p{font-size: 14px;line-height: 25px;padding-bottom: 25px;
+text-overflow: -o-ellipsis-lastline;
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical;
+}
+.jddt dl dd a{overflow: auto;display: block;line-height: 30px;}
+.jddt dl dd a i{font-size: 30px;float: left;margin-right: 20px;color:#bb997b}
+/*酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态*/ 
+.jdfyq{margin: 60px 0;}
+.jdfyq ul{overflow: auto;zoom: 1;float: right;}
+.jdfyq ul li{background-color: #e6e6e6;height: 50px;line-height: 50px;text-align: center;float: left;margin-left: 10px;width: 50px;border-radius: 10px;}
+.jdfyq ul li:hover{background-color: #bb997b;}
+.jdfyq ul li:hover a{color: #fff;}
+.jdfyq ul li:first-child,.jdfyq ul li:last-child{width: 100px;}
+/*酒店动态分页器 酒店动态分页器 酒店动态分页器 酒店动态分页器 酒店动态分页器 */
+.jddtxq p{text-align: center;line-height: 30px;}
+/*.jddtxq p:first-child{margin-top: 0;}
+.jddtxq p span{margin-left: 20px;}
+.jddtxq p span.jddtxqSj{color: #bb997b;margin: 0 20px 0 0;}*/
+.jddtxq img{width: 100%;display: block;margin-top: 60px;}
+.jddtSx{width:240px;margin: 0 auto;overflow: auto;margin-top: 60px;}
+.jddtSx a{line-height: 30px;display: block;width:100px;float: left;}
+.jddtSx a:first-child{margin-right: 40px;}
+.jddtSx a i{color: #bb997b;font-size:30px;padding-right: 15px;float: left;}
+ /*酒店动态详情  酒店动态详情  酒店动态详情  酒店动态详情  酒店动态详情  酒店动态详情*/ 
+ .fxjs{overflow: auto;zoom: 1;}
+ .fxjs dl{overflow: auto;zoom: 1;background-color: #fafafa;margin-top: 30px;}
+ .fxjs dl:first-child{margin-top: 0;}
+ .fxjs dl dt{float: left;width: 45%;margin: auto 0;}
+ .fxjs dl dt img{width: 100%;display: block;}
+ .fxjs dl dd{float: left;width: 51%;padding: 40px 2%;overflow: auto;zoom: 1;}
+ .fxjs dl dd h3{padding-bottom: 20px;background:url(../img/fxjsh3bg.png) no-repeat left 10px bottom;font-size: 20px;color: #bb997b;}
+ .fxjs dl dd p.fxjsjj{padding: 15px 0;font-weight: bold;color: #bb997b;line-height: 40px;}
+ .fxjs dl dd p.fxjsjj span{margin-left: 15px;} 
+ .fxjs dl dd p{color: #4c4c4c;padding-bottom:10px;line-height: 30px;}
+ .fxydck{overflow: auto;zoom: 1;margin-top: 20px;width:260px;} 
+ .fxydck a:first-child{width: 120px;height: 50px;line-height: 50px;display: block;border-radius:10px;text-align:center;background-color: #bb997b;color:#fff;float: left;margin-right: 20px;}
+ .fxydck a:last-child {line-height: 50px;float: left;}
+ .fxydck a:last-child i{color: #bb997b;font-size:30px;padding-right: 15px;float: left;}
+ .fxjs dl:nth-child(2n) dt{float: right;}
+ .fxjs dl:nth-child(2n) dd{text-align: right;}
+ .fxjs dl:nth-child(2n) dd h3{background:url(../img/fxjsh3bg.png) no-repeat right 10px bottom;}
+ .fxjs dl:nth-child(2n) dd .fxydck{float: right;}
+
+ /*房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 */
+ .fxjsxq{overflow: auto;zoom: 1;}
+ .fxjsxq p{line-height: 28px;padding-bottom: 20px;}
+ .fxjsxq img{display: block;width: 32%;margin: 20px 2% 0 0;float: left;max-width: 460px;}
+ .fxjsxq img:last-child{margin-right: 0;}
+ /*房型介绍详情 房型介绍详情 房型介绍详情 房型介绍详情 房型介绍详情 */
+ .sshfw{overflow: auto;zoom: 1;}
+ .sshfw dl{overflow: auto;zoom: 1;}
+ .sshfw dl dt{float: left;width: 50%;margin: auto 0;}
+ .sshfw dl dt img{width: 100%;display: block;}
+ .sshfw dl dd{float: left;width: 40%;padding: 7% 5% 0;overflow: auto;zoom: 1;background: url(../img/sshfwbg1.png) no-repeat right;}
+ .sshfw dl:nth-child(2n) dd{background: url(../img/sshfwbg2.png) no-repeat left}
+ .sshfw dl dd ul li{background: url(../img/sshfwli.png) no-repeat left center;font-size: 16px;color: #666;margin: 15px 0;padding-left: 25px;}
+ .sshfw dl:nth-child(2n) dt{float: right;}
+ .sshfw dl:nth-child(2n) dd ul {float: right;}
+ /* 设施和服务 设施和服务 设施和服务 设施和服务 设施和服务 设施和服务 设施和服务*/
+.ct{overflow: auto;zoom: 1;}
+.ct dl {width:32%;float: left;margin: 20px 2% 0 0;background-color: #f5f5f5;}
+.ct dl:last-child{margin-right: 0;}
+.ct dl dt img{display: block;width: 100%;}
+.ct dl dd{padding: 20px 5%;height: 330px;}
+.ct dl dd h3{text-align: center;padding: 10px 0;font-size: 16px;color: #a88769;}
+.ct dl dd p{line-height:30px;padding: 20px 0;}
+.ct dl dd div.ctyysj{width: 100%;overflow: auto;}
+.ct dl dd div.ctyysj p{line-height: 30px;}
+.ct dl dd div.ctyysj p:first-child{width: 40%;float: left;text-align: right;margin-right: 3%;}
+.ct dl dd div.ctyysj p:last-child{width: 57%;float: right;text-align: left;}
+.ct dl:first-child dd div.ctyysj p:first-child{width: 30%;float: left;text-align: right;margin-right: 3%;}
+.ct dl:first-child dd div.ctyysj p:last-child{width: 67%;float: right;text-align: left;}
+.ct dl:hover {background-color: #b59272;}
+.ct dl:hover dd p,.ct dl:hover dd h3{color: #fff;}
+ /*餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅  餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 */
+.jbjjl{overflow: auto;zoom: 1;}
+ .jbjjl dl{overflow: auto;zoom: 1;background-color: #fcfcfc;margin-top: 30px;}
+  .jbjjl dl:first-child{margin-top: 0;}
+ .jbjjl dl dt{float: left;width: 55%;margin: auto 0;}
+ .jbjjl dl dt img{width: 100%;display: block;}
+ .jbjjl dl dd{float: left;width: 41% ;padding: 60px 2% 40px;overflow: auto;zoom: 1}
+ .jbjjl dl dd h3{padding-bottom: 20px;background:url(../img/fxjsh3bg.png) no-repeat left 10px bottom;font-size: 20px;color: #bb997b;}
+ .jbjjl dl dd p.jbjjlsj{padding: 30px 0 }
+ /*酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 */
+.scfw{overflow: auto;zoom: 1;width: 80%;margin: 0 auto;}
+.scfw p{padding-bottom: 10px;line-height: 30px;}
+.scfw p span,.scfw a span{font-weight: bold;color: #b08e6f;}
+.scfw a i{font-size: 40px;color: #b99776;margin-right: 15px;}
+.scfw img{display: block;width: 100%;margin: 30px auto;}
+/*送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 */
+.dl{width: 100%;position: relative;}
+.dl>img{width: 100%;display: block;}
+.dlxq{width: 530px;background-color: #b7987d;border-radius: 10px;overflow: auto;zoom: 1;position: absolute;top:50%;margin-left:-265px;left: 50%;margin-top:-295px;}
+.dlxq img{width: 60%;margin: 0 auto;display: block;padding: 13% 0;}
+.dlxq h3{text-align: center;padding: 8% 0;font-size: 24px;color: #fff;display: none;}
+.dlxq form input{display: block;width: 80%;margin: 0 auto 30px ;height: 70px;background-color: rgba(255,255,255,0.5);border-radius: 10px;font-size: 24px;color: #b49478;padding-left: 20px;}
+.dlxq form input:last-child{width: 70%;margin: 60px auto;height: 50px;background-color: #fff;border-radius: 40px;padding-left: 0;}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #b49478;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #b49478;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #b49478;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #b49478;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #b49478;
+}
+/*登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 登录 */
+.hyzl{overflow: auto;zoom: 1;}
+.hyzljb{border-bottom: 1px solid #b59272;padding-bottom: 80px;}
+.hyzl form {width: 100%;max-width: 440px;margin: 0 auto;}
+.hyzl form div{padding: 10px 0;}
+.hyzl form label{width: 100px;line-height: 60px;text-align: right;float: left;margin-right: 15px;color: #b59272;font-size: 16px}
+.hyzl form span{line-height: 60px;color: #b59272;}
+.hyzl form input {width: calc(100% - 135px);height: 60px;background-color: #f2f2f2;border-radius: 10px;font-size: 16px;padding-left: 20px;}
+.hyzl form input.hyzltj{width: 180px;padding-left: 0;background-color: #b59272;color: #fff;margin: 0 auto;display:block;}
+.hyzlxgmm h4{font-size: 16px;text-align: center;font-weight:normal;padding: 80px 0 60px;color: #b59272;}
+/*会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 */
+.rzmx{overflow: auto;zoom: 1;}
+.rzmx>table{width: 100%;text-align: center;border-collapse: collapse;}
+.rzmx>table thead tr td{font-weight: bold;color: #b59272;padding: 40px 0;}
+.rzmx>table tr td{border: 1px solid #f0f0f0;padding: 30px 0;font-size: 16px;color: #666;}
+.rzmx .rzmxfy{width: 100%;padding: 50px 0;overflow: auto;zoom: 1;}
+.rzmx .rzmxfyF{float: right;}
+.rzmx .rzmxfy a{padding: 0 15px;}
+.rzmx .rzmxfy a:hover{color: #b59272;}
+/*入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 兑奖记录 兑奖记录 兑奖记录 兑奖记录 兑奖记录 兑奖记录*/
+.rzmxdh {overflow: auto;zoom: 1;margin-top:20px}
+.rzmxdh h3{background-color: #bb997b;font-size: 16px;font-weight: normal;color: #fefefe;padding: 20px 0 20px 60px;}
+.rzmxdh table{width: 100%;text-align: center;border-collapse: collapse;}
+.rzmxdh table thead tr td{font-weight: bold;color: #b59272;padding: 20px 10px;}
+.rzmxdh table tr td{padding: 15px 10px;font-size: 16px;color: #666;border-bottom: 1px solid #f0f0f0;}
+.rzmxdh table tbody tr td:last-child{width: 150px;}
+.rzmxdh table tbody tr td a{display: block;width: 100px;height: 30px;line-height:30px;border-radius:5px;background-color: #bb997b;color: #fff;}
+/*入住明细 兑换 */
+.lpdhxx{position: fixed;width: 100%;height: 100%;background-color: rgba(0,0,0,0.5);z-index: 1000;overflow: auto;display: none;}
+.lpdhxxs{width: 30%;background-color: #333;margin:80px auto;overflow: auto;min-width: 300px;}
+.lpdhxxs h3{text-align: center;line-height: 100px;color: #fff;}
+.lpdhxxs form div{overflow: auto;margin-bottom: 10px;}
+.lpdhxxs form label{float: left;width:100px;text-align: right;line-height: 40px;color: #bb997b;font-weight: bold;margin: 0 5px;}
+.lpdhxxs form input{width: calc(100% - 140px);height: 40px;padding-left: 5px;}
+.lpdhxxs form span{line-height: 40px;color: #fff;}
+.lpdhxxs form div.lpdhxxslqsj input{margin-top: 20px;}
+.lpdhxxs form div.lqdhxxsxb input{width: 15px;float: left;margin-left: 20px;}
+.lpdhxxs form div.lqdhxxsxb span{float: left;line-height: 40px;margin-left: 10px;}
+.lpdhxxs form div.lpdhxxstj{width: 200px;margin: 30px auto;}
+.lpdhxxs form div.lpdhxxstj input{width: 80px;height:30px;line-height:30px;border-radius:5px;margin: 0 5px;padding: 0;background-color: #bb997b;color: #fff;}
+/*入住明细 弹出层 */
+/*.rzmxdh dl{width: 24%;float: left;margin-right: 1.33%;margin-top: 20px;}
+.rzmxdh dl:nth-child(4n+1){margin-right: 0;}
+.rzmxdh dl dt img{width: 100%;display: block;}
+.rzmxdh dl dd{text-align: center;padding: 20px 5px;background-color: #bb997b;}
+.rzmxdh dl dd p{color: #fff;}*/
+/*入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 入住明细 */
+.hdxq{width: 590px;overflow: auto;zoom: 1;padding-bottom: 50px;}
+.hdxq h3{font-size: 20px;font-weight: normal;color: #b59272;padding: 30px 0;}
+.hdxq p{line-height: 30px;}
+.hdxq p span{display: block;margin-top: 10px;}
+/*活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 */
+.hyzq{overflow: auto;zoom: 1;}
+.hyzq>p{line-height: 30px;}
+.hyzq>p span{display: block;}
+.hyzqfw{overflow: auto;zoom: 1;margin: 20px 0 ;}
+.hyzqfw dl{float: left;width: 50%;overflow: auto;zoom: 1;background-color: #fafafa;}
+.hyzqfw dl dt{width: 50%;float: left;}
+.hyzqfw dl dt img{display: block;width: 100%;}
+.hyzqfw dl dd{width: 46%;float: left;padding: 2% 1% 0 2%;}
+.hyzqfw dl dd h3{color: #ba9a7e;padding-bottom: 20px;}
+.hyzqfw dl dd h3 span{font-size: 16px;font-weight: normal;color: #666;}
+
+/*.hyzqfw dl dd ul li{background:url(../img/hyzqli.png) no-repeat left top 8px;}
+.hyzqfw dl dd ul li p{padding: 0 0 15px 25px;line-height: 25px;color: #666;font-size: 16px}
+.hyzqfw dl dd>p{margin-top: 15px;}
+.hyzqfwp p{text-align: center;line-height: 30px;}
+.hyzqfwp p span{color: #ba9a7e;font-weight: bold;}*/
+
+.hyzqfw dl dd ul li{background:url(../img/hyzqli.png) no-repeat left top 8px;padding: 0 0 15px 15px;line-height: 25px;color: #666;font-size: 16px}
+.hyzqfw dl dd p{margin-top: 20px;}
+.hyzqfwp p{text-align: center;line-height: 30px;}
+.hyzqfwp p span{color: #ba9a7e;font-weight: bold;display:inline}
+
+.hyzqxq{margin: 50px 0;}
+.hyzqxq h3,.hyzqtp h3{padding: 30px 0;border-bottom: 2px solid #aa896b;font-size: 20px;color: #b59272;margin-bottom: 40px;}
+.hyzqxq dl {overflow: auto;zoom: 1;margin-top: 20px;}
+.hyzqxq dl:nth-child(2n+1){background-color: #fafafa;}
+.hyzqxq dl dt{width: 50%;float: left;}
+.hyzqxq dl dt img{width: 100%;display: block;}
+.hyzqxq dl dd{padding: 0 2% 0 3%;float: left;width: 45%;}
+.hyzqxq dl dd h4{font-size: 16px;color: #aa896b;padding: 25px 0;background: url(../img/fxjsh3bg.png) no-repeat left bottom;}
+.hyzqxq dl dd table{margin-top: 30px;border-collapse: collapse;width: 60%;}
+.hyzqxq dl dd table.hyzqxqTab1{width: 50%;}
+.hyzqxq dl dd table.hyzqxqTab2{width: 80%;}
+.hyzqxq dl dd table tr td{border: 1px solid #b89779;text-align: center;padding: 10px 0;}
+
+.hyzqtps{padding: 0 50px;position: relative;}
+.hyzqtps ul{width: calc(100% - 30px)}
+.hyzqtps ul li{width: 25%;}
+.hyzqtps ul li img{display: block;width: 100%;
+-webkit-user-select:none; 
+-moz-user-select:none; 
+-ms-user-select:none; 
+user-select:none;
+}
+.hyzqtps .swiper-button-prev{background: url(../img/swiperL.png) no-repeat left center;outline: none;}
+.hyzqtps .swiper-button-next{background: url(../img/swiperR.png) no-repeat right center;outline: none;}
+ /*会议专区 会议专区 会议专区 会议专区 会议专区 会议专区*/
+.cdpmt{overflow: auto;zoom: 1;}
+.cdpmt1{width: 46%;margin-right: 2%;float: left;}
+.cdpmt2{width: 52%;float: left;}
+
+/*场地平面图 场地平面图 场地平面图 场地平面图 场地平面图*/
+.jszx p{text-align: center;line-height: 30px;}
+.slzx p{text-align: left;line-height: 30px;}
+.jszx img,.slzx img {width: 100%;margin: 60px auto 0;max-width: 1204px;display: block;}
+/*健身中心 健身中心 健身中心 健身中心 健身中心 健身中心 */
+.hyjyh p{text-align: center;margin-top: 20px;}
+.hyjyh p span{font-size: 20px;font-weight: bold;color: #d7c6b8;}
+.hyjyh img{width: 100%;margin: 60px auto 0;display: block;}
+ /*会议及宴会 会议及宴会 会议及宴会 会议及宴会 会议及宴会 会议及宴会*/
+.cyhd,.cyhds{overflow: auto;zoom: 1;}
+.cyhds dl{float: left;width: 49.5%;overflow: auto;zoom: 1;margin-right: 1%;background-color: #fafafa;}
+.cyhds dl:nth-child(2){margin-right: 0;}
+.cyhds dl:nth-child(2) dd{background: url(../img/cyhdbg2.png)no-repeat center center;}
+.cyhds dl dt{width: 50%;float: left;}
+.cyhds dl dt img{display: block;width: 100%;}
+.cyhds dl dd{width: 42%;float: left;padding: 20px 3% 20px 5%;background: url(../img/cyhdbg1.png)no-repeat center center;}
+.cyhds dl dd h3{color: #ba9a7e;padding-bottom: 20px;background: url(../img/fxjsh3bg.png) no-repeat left bottom;}
+.cyhds dl dd p{margin-top: 15px;line-height: 30px;}
+.cyhd>img,.qthd>img,.xzlcly>img{width: 100%;display: block;margin: 60px 0;}
+/*餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动*/ 
+.qthd{overflow: auto;zoom: 1;}
+.qthd dl{overflow: auto;zoom: 1;box-shadow:2px 2px 3px #aaaaaa;border: 1px solid #f3f3f3;border-bottom: none;}
+.qthd dl dt{width: 70%;float: left;}
+.qthd dl dt img{width: 100%;display: block;}
+.qthd dl dd{width:27%;float: left;padding: 100px 0 0 3%;}
+.qthd dl dd p{line-height: 30px;margin-top: 20px;}
+.qthd dl dd p span{color: #a48368;font-weight: bold;}
+.qthd dl dd h3{color: #ba9a7e;padding-bottom: 20px;background: url(../img/fxjsh3bg.png) no-repeat left bottom;}
+/*其他活动 其他活动 其他活动 其他活动 其他活动 其他活动 其他活动 其他活动 */
+.xzlcly{overflow: auto;zoom: 1;}
+.xzlcly p{line-height: 30px;}
+.xzlcly dl{overflow: auto;zoom: 1;margin: 50px 0;}
+.xzlcly dl dt{width: 28%;float: left;}
+.xzlcly dl dt img{width: 100%;display: block;}
+.xzlcly dl dd{width:calc(72% - 2px);float: left;border: 1px solid #f5f5f5;margin-top: 30px;overflow: auto}
+.xzlcly dl dd ul{float: left;width: 25%;margin-left: 5%;}
+.xzlcly dl dd ul:first-child{width: 33%;}
+.xzlcly dl dd ul h3{color: #ba9a7e;padding: 30px 0;}
+.xzlcly dl dd ul li{line-height: 30px;background:url(../img/hyzqli.png) no-repeat left top 8px;padding: 0 0 10px 20px;color: #666;font-size: 16px}
+/*行政楼层礼遇 行政楼层礼遇 行政楼层礼遇 行政楼层礼遇 行政楼层礼遇 行政楼层礼遇*/ 
+.byljs{overflow: auto;zoom: 1;}
+.byljs dl{overflow: auto;zoom: 1;margin-top: 80px;}
+.byljs dl:nth-child(2n) dt{float: right;}
+.byljs dl dt{float: left;width: 50%;}
+.byljs dl dt img{display: block;width: 100%;}
+.byljs dl dd{float: left ;width: calc(50% - 70px);padding: 80px 10px 10px 60px ;}
+.byljs dl dd img{display: block;}
+.byljs dl dd p {padding-top: 80px;font-size: 20px;color:#4c4c4c;line-height: 30px;}
+.byljs dl dd p span{display: block;color: #c0bfbf;}
+@media only screen and (max-width:1400px ) {
+	#navSh{display: block;}
+	#logo{width: 160px}
+	#headerD{position: relative;z-index: 10000;}
+	#headerD nav{position: absolute;z-index: 1000;top:60px;right:calc(15% - 50px);width: 120px;background-color: #fff;display: none;}
+	#headerD nav ul li{float: none;width: 100%;}
+	#banner a{height: 400px;}
+	.sygywmL,.sygywmR{float: none;width: 100%;}
+	#swiper2 ul li{width: 33.33%;height: 450px;}
+	
+	.jddt dl dt,.jddt dl dd{float: none;width: 100%;}
+	.ct dl dd{height: 410px;}
+	.ct dl dd div.ctyysj p:first-child,.ct dl:first-child dd div.ctyysj p:first-child{width: 100%;float: none;text-align: center;margin-right: 0;padding:10px 0 0 0}
+	.ct dl dd div.ctyysj p:last-child,.ct dl:first-child dd div.ctyysj p:last-child{width: 100%;float: none;text-align: center;padding:0 0 10px 0}
+	.rzmxdh dl{width: 32%;float: left;margin-right: 2%;margin-top: 20px;}
+	.rzmxdh dl:nth-child(4n+1){margin-right: 2%;}
+	.rzmxdh dl:nth-child(3n+1){margin-right: 0;}
+	.hyzqfw dl{float: none;width: 100%;margin-top: 20px;}
+	.hyzqfw dl:first-child{margin-top: 0;}
+	.hyzqfw dl dt{width: 350px;}
+	.hyzqfw dl dd{width: calc(96% - 350px);}
+	.hyzqxq h3{padding: 10px 0;}
+	.hyzqxq dl dd table{margin-top: 10px;}
+	.hyzqxq dl dd table.hyzqxqTab1{width: 80%;}
+	.hyzqxq dl dd table.hyzqxqTab2{width: 100%;}
+	.hyzqtps ul{width: calc(100% - 20px);}
+	.hyzqtps ul li{width: 33.33%;}
+	.cyhds dl{float: none;width: 100%;margin-right: 0;}
+	.cyhds dl:nth-child(2){margin-top: 30px;}
+	.cyhds dl dt{width: 370px;}
+	.cydhs dl dd{width: calc(92% - 370px);}
+	.qthd dl dd{padding-top: 30px;}
+	.qthd dl dd p{margin-top: 15px;}
+	.qthd dl dd h3{color: #ba9a7e;padding-bottom: 15px;}
+	
+	.xzlcly dl{overflow: auto;zoom: 1;margin: 50px 0;}
+	.xzlcly dl dt{width: 100%;float: none;}
+	.xzlcly dl dt img{max-width: 400px;margin: 0 auto;}
+	.xzlcly dl dd{width:calc(100% - 2px);float: none;margin-top: 0;}
+
+	.byljs dl dd,.byljs dl dd p{padding-top: 20px}
+}
+@media only screen and (max-width:1000px ) {
+	#swiper2 ul li{width: 50%;}
+	.footer{display: none;}
+	.jdjj dl dt{float: none;width:100%;margin-right: 0;}
+	.jdjj ul li{width: 50%;}
+	.ejymH{width: 100%;height: 360px;}
+	
+	.ejymNavSh{display: block;}
+	.ejymNav{float: none;margin-right: 0;position: absolute;right:0;top:60px;display: none;z-index: 1000;}
+	.ejymNav ul{width: 180px;background-color: rgba(187,153,123,1)}
+	.ejymNav ul li{float: none;padding: 5px 0;}
+	.ejymNav ul li a{border-left: none;display: block;text-align: center;line-height: 40px;}
+	.ejymNav ul li:first-child a{border: 0;}
+	.ejymNav ul li:hover,.ejymNav ul li.ejymYs{border-bottom:2px solid #fff;padding-bottom: 3px;}
+	.jdzsxq .swiper-button-prev{width:20px;height:30px;margin: 25px 0 0 -40px;}
+.jdzsxq .swiper-button-next{width:20px;height:30px;margin: 25px -40px 0 0;}
+	.jdzsxq ul{width: calc(100% - 30px);}
+	.jdzsxq ul li{width: 50%;}
+	.dlwzLxfs{float: none;width: 94%;padding: 20px 3%;}
+	.dlwzLxfs div a{padding-left: 40px;}
+	
+	.dlwzDt{float: none;width: 100%;}
+	.fxjs dl dt{float: none;width: 100%;}
+	.fxjs dl dd{float: none;width: calc(100% - 30px);}
+	.fxjs dl:nth-child(2n) dt{float: none;}
+ 	.fxjs dl:nth-child(2n) dd{text-align: left;}
+ 	.fxjs dl:nth-child(2n) dd h3{background:url(../img/fxjsh3bg.png) no-repeat left 10px bottom;}
+ 	.fxydck{width: 100%;}
+ 	.fxydck a:first-child,.fxydck a:last-child{float:none;}
+	.fxjsxq img{width: 100%;margin: 20px 0 0 0;float: none;}
+	.sshfw dl dt{float: none;width: 100%;}
+	.sshfw dl dd{float: none;width: 90%;padding: 7% 5%;}
+	.sshfw dl:nth-child(2n) dt{float: none;}
+	.sshfw dl:nth-child(2n) dd ul {float: none;}
+	.ct dl {width:100%;float: none;margin-right: 0;background-color: #f5f5f5;}
+	.ct dl dd{height: 100%;}
+	.jbjjl dl dt{float: none;width: 100%;}
+	.jbjjl dl dd{float: none;width:calc(100% - 40px);}
+	.dlxq{width:330px;position: absolute;top:50%;margin-left:-165px;left: 50%;margin-top:-185px;}
+	.dlxq form input{margin-bottom:15px ;height: 50px;font-size: 18px;}
+	.dlxq form input:last-child{margin: 30px auto;height: 40px;}
+	.rzmxdh dl{width: 49%;float: left;margin-right: 2%;margin-top: 20px;}
+	.rzmxdh dl:nth-child(4n+1){margin-right: 2%;}
+	.rzmxdh dl:nth-child(3n+1){margin-right: 2%;}
+	.rzmxdh dl:nth-child(2n+1){margin-right: 0;}
+	.hdxq{width: 100%;}
+	.hyzqfw dl dt{width: 50%;}
+	.hyzqfw dl dd{width: 46%;}
+	.hyzqxq dl dd table{margin-top: 10px;}
+	.hyzqxq dl dd table.hyzqxqTab1{width: 80%;}
+	.hyzqxq dl dd table.hyzqxqTab2{width: 100%;}
+	
+	.hyzqxq dl dt{width: 100%;float: none;}
+	.hyzqxq dl dd{float: none;width: 95%;}
+	.hyzqtps ul{width: calc(100% - 10px);}
+	.hyzqtps ul li{width: 50%;}
+	
+	.cyhd dl dt{width: 50%;}
+	.cyhd dl dd{width: 42%;}
+	
+	.qthd dl dt{width: 100%;float: none;}
+	.qthd dl dd{width:97%;float: left;padding: 20px 0 20px 3%;}
+	.xzlcly dl dd{border: 0;}
+	.xzlcly dl dd ul,.xzlcly dl dd ul:first-child{float: none;width: 100%;margin-left: 0;}
+	.byljs dl:nth-child(2n) dt{float: none;}
+	.byljs dl dt{float: none;width: 100%;}
+	.byljs dl dt img{display: block;width: 100%;}
+	.byljs dl dd{float: none ;width: 100%;padding: 30px 0;}
+	.byljs dl dd img{width: 160px;}
+}
+@media only screen and (max-width:640px ) {
+	#headerT{display: none;}
+	#logo{width: 120px;margin-top: 30px;}
+	#banner a{height: 240px;}
+	.main{padding: 30px 5%;}
+	.main2{margin: 0 auto 20px;}
+	.main2 h2{padding: 20px 0;}
+	.main4{padding: 30px 5% 70px;}
+	.main4 h2{margin-bottom: 10px}
+	.sygywmR ul li{width: calc(50% - 40px);border: none;}
+	.sygywmR h3{text-align: center;}
+	.sygywmR a{width: 105px;margin: 30px auto 0;}
+	#swiper2 ul li{width: 100%;}
+	.syjddt dl{width:100% ;float: none;margin: 30px 0 0 0;background-color: #fff}
+	.footerD p:first-child,.footerD p:nth-child(2),.footerD p:last-child{float: none;margin: 10px 0 0 0;}
+	/*首页 首页 首页 首页 首页 首页 首页 */
+	.ejymH{width: 100%;height: 220px;}
+	.ejymNr{width: 90%;margin: 20px auto;}
+	.ejymNr>h3{padding: 10px 0 }
+	/*ejym ejym ejym ejym ejym ejym ejym ejym ejym ejym ejym */
+	.jdjj p{margin-top: 10px;}
+	.jdjj ul li div a{font-size: 18px;}
+/* 酒店简介 酒店简介 酒店简介 酒店简介 酒店简介*/
+	.jdzs{padding: 20px 0;}
+	.jdzsxq{width:80%;}
+	.jdzsxq h3{font-size: 18px;padding-bottom: 10px;}
+	.jdzsxq ul{width:100%;}
+	.jdzsxq ul li{width: 100%;}
+/* 酒店展示 酒店展示 酒店展示 酒店展示 酒店展示*/
+	.dlwz p{text-align: center;line-height: 30px;margin-bottom: 20px;text-align: left;}
+	.dlwzLxfs div{margin-top: 20px;}
+	/*地理位置 地理位置 地理位置 地理位置 地理位置 地理位置*/
+	.jddt{overflow: auto;zoom: 1;}
+	.jddt dl{padding: 5px;margin-top: 20px;}
+	.jddt dl dd h4{padding: 10px 0;}
+	.jddt dl dd p{padding-bottom: 10px;}
+	/*酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态 酒店动态*/ 
+	.jdfyq{margin: 20px 0 0 0;}
+	.jdfyq ul{float: none;width:210px;margin: 0 auto;}
+	.jdfyq ul li{height: 30px;line-height: 30px;margin-left: 5px;width: 30px;border-radius: 0px;}
+	.jdfyq ul li a{font-size: 12px}
+	.jdfyq ul li:first-child{margin-left: 0;}
+	.jdfyq ul li:first-child,.jdfyq ul li:last-child{width: 50px;}
+	/*酒店动态分页器 酒店动态分页器 酒店动态分页器 酒店动态分页器 酒店动态分页器 */
+	/*.jddtxq p{margin-top: 10px;}
+	.jddtxq p span{margin-left: 10px;}
+	.jddtxq p span.jddtxqSj{color: #bb997b;margin: 0 10px 0 0;}*/
+	.jddtxq img{width: 100%;display: block;margin-top:20px;}
+	.jddtSx{margin-top: 30px;}
+	.jddtSx a i{font-size:25px;padding-right: 5px;}
+	 /*酒店动态详情  酒店动态详情  酒店动态详情  酒店动态详情  酒店动态详情  酒店动态详情*/ 
+	.fxjs dl{margin-top: 20px;}
+	.fxjs dl:first-child{margin-top: 0;}
+	.fxjs dl dd{padding: 10px;overflow: auto;zoom: 1;width: calc(100% - 20px);}
+	.fxjs dl dd h3{padding-bottom: 10px;}
+	.fxjs dl dd p.fxjsjj{padding: 3px 0;line-height: 30px;}
+	.fxjs dl dd p.fxjsjj span{margin-left: 5px;} 
+	.fxydck{overflow: auto;zoom: 1;margin-top: 10px;} 
+	.fxydck a:first-child{height: 40px;line-height: 40px;border-radius: 0;}
+	.fxydck a:last-child {line-height: 40px;}
+	.fxydck a:last-child i{font-size:25px;padding-right: 5px;}
+ /*房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 房型介绍 */
+	.fxjsxq p{padding-bottom: 5px;}
+	.fxjsxq img{margin: 10px 0 0 0;}
+ /*房型介绍详情 房型介绍详情 房型介绍详情 房型介绍详情 房型介绍详情 */
+	.sshfw dl dd{padding: 10px 5%;}
+	.sshfw dl dd ul li{margin: 10px 0;padding-left: 25px;}
+ /* 设施和服务 设施和服务 设施和服务 设施和服务 设施和服务 设施和服务 设施和服务*/
+	.ct dl dd{padding: 10px 5%;}
+	.ct dl dd h3{padding: 5px 0;}
+	.ct dl dd p{line-height:30px;padding: 0;}
+ /*餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅  餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 餐厅 */
+	.jbjjl dl{margin-top: 20px;}
+	.jbjjl dl dd{padding:20px;overflow: auto;zoom: 1}
+	.jbjjl dl dd h3{padding-bottom:10px;font-size: 18px;}
+	 .jbjjl dl dd p.jbjjlsj{padding: 10px 0}
+ /*酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 酒吧及酒廊 */
+.scfw{width: 100%;}
+.scfw a i{font-size: 30px;}
+/*送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 送餐服务 */
+.hyzljb{padding-bottom:30px;}
+.hyzl form div{padding: 5px 0;}
+.hyzl form label{width: 100px;line-height: 40px;margin-right: 5px;}
+.hyzl form span{line-height: 40px;}
+.hyzl form input {width: calc(100% - 115px);height: 40px;border-radius: 0;padding-left: 10px;}
+.hyzl form input.hyzltj{width: 140px;margin: 10px auto;}
+.hyzlxgmm h4{font-size: 16px;text-align: center;font-weight:normal;padding: 20px 0;color: #b59272;}
+/*会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 会员资料 */
+.hdxq h3{padding: 10px 0;}
+.hdxq p{line-height: 30px;}
+.hdxq p span{display: block;margin-top: 5px;}
+/*活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 活动详情 */
+	.dl{position: static;padding: 30px 0;background-color: #f5f5f5}
+	.dl>img{display: none;}
+	.dlxq{width: 80%;background-color: #b7987d;position: static;margin: 0 auto;}
+	.dlxq h3{display: block;}
+	.dlxq img{display: none;}
+	.dlxq form input{display: block;width: 70%;margin: 0 auto 30px ;height: 50px;font-size: 16px;}
+	.dlxq form input:last-child{width: 50%;height: 40px;}
+	.rzmxdh dl{width: 100%;float: none;margin-right: 0;margin-top: 20px;}
+	.rzmxdh dl:nth-child(4n+1){margin-right: 0;}
+	.rzmxdh dl:nth-child(3n+1){margin-right: 0;}
+	
+	.hyzqfw dl dt{width: 100%;float: none;}
+	.hyzqfw dl dd{width: 96%;float: none;}
+	.hyzqfw dl dd h3{padding-bottom: 10px;}
+	.hyzqfw dl dd ul li{padding: 0 0 8px 15px;}
+	.hyzqfwp p{text-align: left;line-height: 25px;}
+	.hyzqxq{margin: 20px 0;}
+	.hyzqxq h3,.hyzqtp h3{padding: 20px 0 10px;font-size: 18px;margin-bottom: 10px;}
+	.hyzqxq dl {overflow: auto;zoom: 1;margin-top: 20px;}
+	.hyzqxq dl dd h4{padding: 10px 0;}
+	
+	
+	.hyzqtps ul{width: 100%;}
+	.hyzqtps ul li{width: 100%;}
+	.hyzqtps{padding: 0 32px;}
+	.hyzqtps .swiper-button-prev{width: 20px;height: 30px;}
+	.hyzqtps .swiper-button-next{width: 20px;height: 30px;}
+	.hyzqfw dl dd p{margin-top: 10px;}
+	 /*会议专区 会议专区 会议专区 会议专区 会议专区 会议专区*/
+	.cdpmt1{width: 100%;margin-right: 0;float: none;display: block;}
+	.cdpmt2{width: 100%;float: none;display: block;margin-top: 20px;}
+	
+	.jszx img,.slzx img {width: 100%;margin: 30px auto 0;max-width: 1204px;display: block;}
+	/*健身中心 健身中心 健身中心 健身中心 健身中心 健身中心 */
+	.hyjyh p{text-align: left;margin-top: 10px;}
+	.hyjyh p span{font-size: 18px;}
+	.hyjyh img{margin:30px auto 0;}
+	 /*会议及宴会 会议及宴会 会议及宴会 会议及宴会 会议及宴会 会议及宴会*/
+	.cyhds dl dt{width: 100%;float: none;}
+	.cyhds dl dd{width: 92%;float: none;padding: 10px 3% 10px 5%;}
+	.cyhds dl dd h3{padding-bottom: 10px;}
+	.cyhds dl dd p{margin-top: 5px}
+	.cyhd>img,.qthd>img,.xzlcly>img{width: 100%;display: block;margin: 30px 0;}
+	/* 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动 餐饮活动*/
+	.qthd dl dd p{margin-top: 10px;}
+	.qthd dl dd h3{padding-bottom: 10px;}
+	/*其他活动 其他活动 其他活动 其他活动 其他活动 其他活动 其他活动 其他活动 */
+	.xzlcly dl{overflow: auto;zoom: 1;margin: 30px 0;}
+	.xzlcly dl dd ul h3{color: #ba9a7e;padding: 20px 0;}
+	/*行政楼层礼遇 行政楼层礼遇 行政楼层礼遇 行政楼层礼遇 行政楼层礼遇 行政楼层礼遇*/ 
+	.byljs dl{margin-top: 30px;}
+	.byljs dl dd img{width: 80px;}
+	
+	.rzmxdh table tbody tr td:last-child{width: 100px;}
+	.rzmxdh table tbody tr td a{width: 100px;}
+
+}
