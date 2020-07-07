@@ -1,0 +1,141 @@
+{include file="base/head" /}
+<style>
+.img1 {
+    margin-top: 50px;
+    padding: 85px 10%;
+    margin: 0 auto;
+    font-family: 微软雅黑;
+    /* background-color: #fafafa; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.img1 img{
+    display: block;
+    width: 100%;
+    max-width: 610px;
+    float: left;
+    width: 45%;
+    margin-bottom: 50px;
+}
+.img1-right{
+    width: 55%;
+    float: right;
+}
+.img1-right span {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #bb997b;
+}
+.img1-right h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    color: #bb997b;
+}
+.img1-right>p {
+    margin: 40px 0;
+    line-height: 40px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 16px;
+    color: #666;
+    text-indent: 2em;
+}
+.img1-right ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.img1-right ul li{
+    float: left;
+    width: calc(25% - 41px);
+    padding: 0 20px;
+    border-right: 1px solid #ccc;
+    list-style: none;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.img1-right ul li p {
+    text-align: center;
+    font-size: 14px;
+    height: 60px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.icon-anjianzhan:before {
+    content: "\e68c";
+}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.img1-right ul li i {
+    display: block;
+    font-size: 50px;
+    color: #bb997b;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.img1-right ul li:last-child {
+    border: none;
+}
+.img1-right a {
+    line-height: 30px;
+    margin-top: 30px;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: #666;
+}
+.img1-right a i {
+    color: #bb997b;
+    font-size: 30px;
+    padding-right: 10px;
+    float: left;
+}
+</style>
+
+<div id="banner">
+    <div class="layui-carousel" id="banner1">
+        <div carousel-item>
+            <div class="banner-image" style="background-image: url('/static/img/1.jpg');"></div>
+            <div class="banner-image" style="background-image: url('/static/img/2.jpg');"></div>
+            <div class="banner-image" style="background-image: url('/static/img/3.jpg');"></div>
+            <div class="banner-image" style="background-image: url('/static/img/4.jpg');"></div>
+            <div class="banner-image" style="background-image: url('/static/img/5.jpg');"></div>
+        </div>
+    </div>
+</div>
+
+<div class="img1">
+    <img src="/static/img/first-img.jpg" data-url="#">
+    <div class="img1-right">
+        <h3><b>雅禾铭都酒店</b></h3>
+        <p>雅禾铭都主题宴会酒店位于永川区协信世外桃源长乐坊(昌州古镇），经营面积6200多平米，能同时接待1800余人就餐，现有3个茶室供您休闲娱乐。拥有5个风格迥异的大厅，最具震撼力的LED印象厅，浪漫的爱琴海厅，古典的中式厅，唯美的花海厅，梦幻的童话厅。专业的声光舞美打造如电视晚会般的婚礼现场，实现您对婚礼所有的梦想；专属订制的管家式服务让您体验到今生难以忘怀的婚礼；厨房按4D标准打造，菜品由大师精心设计，膳食均衡，独具特色，精美别致，尊享色、香、味、型、器、养之完美盛宴！</p>
+        <ul>
+            <li><i class="iconfont icon-anjianzhan"></i><p>品质安全有保障</p></li>
+            <li><i class="iconfont icon-weizhi-tianchong"></i><p>地理位置优越</p></li>
+            <li><i class="iconfont icon-zhufang01"></i><p>缔造舒适的环境</p></li>
+            <li><i class="iconfont icon-huiyi"></i><p>用户口碑好</p></li>
+        </ul>
+        <a href="/index/jianjie"><i class="iconfont icon-xiangyouyuanjiantouyoujiantoumianxing"></i>查看更多</a>
+    </div>
+</div>
+
+{include file="base/floor" /}

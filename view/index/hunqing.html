@@ -1,0 +1,328 @@
+{include file="base/head" /}
+<style>
+    #content {
+        margin-top: 15px;
+
+    }
+
+    .title {
+        font-size: 20px;
+        color: #bb997b;
+        text-align: center;
+        padding: 20px 0 30px;
+    }
+
+    .second-title {
+        text-align: center;
+    }
+
+    img {
+        vertical-align: top;
+        border: 0
+    }
+
+    li,
+    ul {
+        list-style: none;
+        text-transform: capitalize
+    }
+
+    #banner {
+        padding: 0 0 0 75px;
+        /* margin-bottom: -10px */
+    }
+
+    #carousel {
+        position: relative;
+        z-index: 2;
+        transform-style: preserve-3d;
+        perspective: 800px
+    }
+
+    #carousel img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-left: -252px;
+        transition: transform .5s ease-in-out;
+        box-shadow: 8px 8px 20px rgba(0, 0, 0, .2);
+        cursor: pointer
+    }
+
+    #bannerNav {
+        position: relative;
+        margin-top: 20px;
+        height: 10px;
+        padding: 10px 0;
+        text-align: center
+    }
+
+    #bannerNav ul li {
+        cursor: pointer;
+        overflow: hidden;
+        display: inline-block;
+        width: 22px;
+        margin: 0 2px
+    }
+
+    #bannerNav ul li a {
+        margin: 0 auto;
+        display: block;
+        width: 6px;
+        height: 6px;
+        vertical-align: top;
+        border-radius: 3px;
+        background: #5e6671;
+        font-size: 0
+    }
+
+    #bannerNav ul li.on a,
+    #bannerNav ul li:hover a {
+        background: #00aeff
+    }
+
+    #bannerNav ul li.on a {
+        width: 20px
+    }
+
+    #carousel {
+        height: 320px
+    }
+
+    #carousel img {
+        width: 500px;
+        border-radius: 10px;
+        opacity: 0;
+    }
+</style>
+
+<div id="content">
+    <h3 class="title"><b>婚庆主题</b>
+        <span style="display: block;"><b>Wedding Theme</b></span>
+    </h3>
+    <h1 class="second-title"><em><b>/ 华贸店 /</b> </em></h1>
+    <div class="wrap" id="wrap">
+        <ul class="content"></ul>
+        <a href="javascript:;" class="prev">&#60;</a>
+        <a href="javascript:;" class="next">&#62;</a>
+    </div>
+    <h1 class="second-title"><em><b>/ 长乐坊店 /</b> </em></h1>
+    <center>
+        <div id="banner">
+            <div id="carousel">
+                <img src="/static/img/7.jpg" style="width: 352.94px;height: 300px;" data-url="#">
+                <img src="/static/img/8.jpg" style="width: 600px;height: 360px;" data-url="#">
+                <img src="/static/img/9.jpg" style="width: 600px;height: 360px;" data-url="#">
+                <img src="/static/img/10.jpg" style="width: 600px;height: 360px;" data-url="#">
+                <img src="/static/img/11.jpg" style="width: 600px;height: 360px;" data-url="#">
+            </div>
+        </div>
+    </center>
+</div>
+<!-- <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"> </script> -->
+<script>
+    ; (function ($, window, document, undefined) {
+        var Carousel = function (elem, options) {
+            this.defaults = {
+                curDisplay: 0,
+                autoPlay: false,
+                interval: 3000
+            };
+            this.opts = $.extend({}, this.defaults, options);
+
+            var self = this;
+            this.$carousel = elem;
+            this.$aImg = this.$carousel.find('img');
+
+            this.imgLen = this.$aImg.length;
+            this.curDisplay = this.opts.curDisplay;
+            this.autoPlay = this.opts.autoPlay;
+            this.viewWidth = $(window).width() / 2;
+            this.b_switch = true;
+            this.iNow = this.opts.curDisplay;
+            this.timer = null;
+            this.interval = this.opts.interval;
+
+            var htmlNav = "<ul>";
+            for (var i = 0; i < this.imgLen; i++) {
+                if (this.curDisplay == i) {
+                    htmlNav += "<li class=on><a>" + i + "</a></li>";
+                } else {
+                    htmlNav += "<li><a>" + i + "</a></li>";
+                }
+            }
+            htmlNav += "</ul>";
+            this.$carousel.parent().append('<div id=bannerNav>' + htmlNav + '</div>');
+            this.$aNav = this.$carousel.siblings('#bannerNav').find('ul li');
+        };
+
+        var outerWidth = parseInt(document.body.offsetWidth);
+        var middleWidth = 1920;
+        var _height = outerWidth >= middleWidth ? 380 : 300;
+        var _slideHeight = outerWidth >= middleWidth ? 330 : 260;
+
+        Carousel.prototype = {
+            play: function () {
+                if (this.autoPlay) {
+                    if (this.iNow === this.imgLen - 1) {
+                        this.iNow = 0;
+                    } else {
+                        this.iNow++;
+                    }
+
+                    this.movingNext(this.iNow);
+                }
+            },
+
+            movingPrev: function (index) {
+                this.curDisplay = index;
+
+                this.initalCarousel();
+            },
+
+            movingNext: function (index) {
+                this.curDisplay = index;
+
+                this.initalCarousel();
+            },
+
+            initalCarousel: function () {
+                var self = this;
+                var half_imgLen = Math.floor(this.imgLen / 2);
+                var leftNum, rightNum;
+
+                var k = 0;
+                for (var i = 0; i < half_imgLen; i++) {
+                    leftNum = this.curDisplay - i - 1;
+                    if (k == 0) {
+                        this.$aImg.eq(leftNum).css({
+                            transform: 'translateX(' + (-535 * (i + 1)) + 'px) translateZ(-120px)',
+                            width: "auto",
+                        }).animate({
+                            height: _slideHeight + 'px',
+                            marginTop: -_slideHeight / 2 + 'px',
+                            opacity: '0.6'
+                        }, 500);
+                        this.$aImg.eq(leftNum).attr('onclick', null);
+
+                        rightNum = this.curDisplay + i + 1;
+                        if (rightNum > this.imgLen - 1) rightNum -= this.imgLen;
+                        this.$aImg.eq(rightNum).css({
+                            transform: 'translateX(' + (600 * (i + 1)) + 'px) translateZ(-120px) ',
+                            width: "auto"
+                        }).animate({
+                            height: _slideHeight + 'px',
+                            marginTop: -_slideHeight / 2 + 'px',
+                            opacity: '0.6'
+                        }, 500);
+                        this.$aImg.eq(rightNum).attr('onclick', null);
+                        k++;
+                    } else {
+                        this.$aImg.eq(leftNum).css({
+                            transform: 'translateX(0px) translateZ(-1000px) ',
+                            zIndex: -1
+                        });
+
+                        rightNum = this.curDisplay + i + 1;
+                        if (rightNum > this.imgLen - 1) rightNum -= this.imgLen;
+                        this.$aImg.eq(rightNum).css({
+                            transform: 'translateX(0px) translateZ(-1000px) ',
+                            zIndex: -1
+                        });
+                    }
+                    this.$aImg.removeClass('on');
+                    this.$aNav.removeClass('on');
+                }
+
+                var _href = 'location.href=' + "'" + this.$aImg.eq(this.curDisplay).attr('data-url') + "'";
+                this.$aImg.eq(this.curDisplay).css({
+                    transform: 'translateZ(0px)',
+                    zIndex: 99999
+                }).animate({
+                    height: _height + 'px',
+                    marginTop: -_height / 2 + 'px',
+                    opacity: '1',
+                }, 500).addClass('on').attr('onclick', _href);
+                this.$aNav.eq(this.curDisplay).addClass('on');
+
+                this.$carousel.on('webkitTransitionEnd', function () {
+                    self.b_switch = true;
+                });
+            },
+
+            inital: function () {
+                var self = this;
+
+                this.initalCarousel();
+
+                this.$aImg.on('click', function (ev) {
+                    if (self.b_switch && !$(this).hasClass('on')) {
+                        self.iNow = $(this).index();
+                        self.b_switch = false;
+
+                        var direction = self.viewWidth < ev.clientX ? 'next' : 'prev';
+                        var index = $(this).index();
+
+                        if (direction === 'next') {
+                            self.movingNext(index);
+                        } else {
+                            self.movingPrev(index);
+                        }
+                    }
+                }).hover(function () {
+                    clearInterval(self.timer);
+                }, function () {
+                    self.timer = setInterval(function () {
+                        self.play();
+                    }, self.interval);
+                });
+                this.$aNav.on('click', function (ev) {
+                    if (self.b_switch && !$(this).hasClass('on')) {
+                        self.iNow = $(this).index();
+                        self.b_switch = false;
+
+                        var direction = self.viewWidth < ev.clientX ? 'next' : 'prev';
+                        var index = $(this).index();
+
+                        if (direction === 'next') {
+                            self.movingNext(index);
+                        } else {
+                            self.movingPrev(index);
+                        }
+                    }
+                }).hover(function () {
+                    clearInterval(self.timer);
+                }, function () {
+                    self.timer = setInterval(function () {
+                        self.play();
+                    }, self.interval);
+                });
+
+                this.timer = setInterval(function () {
+                    self.play();
+                }, this.interval);
+
+                this.$carousel.on('selectstart', function () {
+                    return false;
+                });
+            },
+
+            constructor: Carousel
+        };
+
+        $.fn.carousel = function (options) {
+            var carousel = new Carousel(this, options);
+
+            return carousel.inital();
+        };
+
+    })(jQuery, window, document, undefined);
+    $(function () {
+        $('#carousel').carousel({
+            curDisplay: 0, //默认索引
+            autoPlay: true, //是否自动播放
+            interval: 3000 //间隔时间
+        });
+    });
+</script>
+{include file="base/floor" /}

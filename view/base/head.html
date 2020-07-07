@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>雅禾铭都主题宴会酒店</title>
+    <script type='text/javascript' src='/static/layui/layui.js'></script>
+    <link rel="stylesheet" type="text/css" href="/static/layui/css/layui.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/index.css" /> -->
+    <link rel="stylesheet" type="text/css" href="/static/css/iconfont.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="/static/css/swiper.min.css" /> -->
+    <link type="text/css" href="/static/css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="/static/js/tools.js"></script>
+    <script type="text/javascript" src="/static/js/img_js.js"></script>
+    <script type="text/javascript" src="/static/js/jquery-3.3.1.min.js"></script>
+    <style>
+    html, body {
+        height:100%;
+        margin:0;
+        padding:0;
+        background-color:antiquewhite;
+    }
+    #head {
+        height: 150px;
+        width: 100%;
+        /* position: absolute; */
+    }
+    .top {
+        height: 105px;
+        background-image: url('/static/img/logo.jpg');
+    }
+    .navigation {
+        height: 45px;
+        width: 100%;
+        text-align:center;
+    }
+    .navigation-margin {
+        margin-left: 100px;
+    }
+    /* .layui-nav {
+        background-color: grey
+    } */
+    #banner {
+        width: 100%;
+        height: 690px;
+        background-color: antiquewhite;
+        margin-top: 15px;
+    }
+    .banner-image {
+        background-repeat: round;
+    }
+    #floor {
+        margin-top: 10px;;
+        width: 100%;
+        height: 85px;
+        background-color: wheat;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;;
+        /* line-height: 85px; */
+    }
+    .floor-left {
+        font-size: 16px;
+        margin-left: 50px;
+    }
+    .floor-right {
+        width: 150px;
+        height: 60px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="head">
+        <!-- 顶部logo -->
+        <div class="top"></div>
+        <!-- 导航 -->
+        <div class="navigation ">
+            <ul class="layui-nav" lay-filter="navigat">
+                {eq name="action" value="index"}<li class="layui-nav-item layui-this"><a href="/">酒店首页</a></li>
+                {else/}<li class="layui-nav-item"><a href="/">酒店首页</a></li>{/eq}
+
+                {eq name="action" value="jianjie"}<li class="layui-nav-item navigation-margin layui-this"><a href="/index/jianjie">酒店简介</a></li>
+                {else/}<li class="layui-nav-item navigation-margin "><a href="/index/jianjie">酒店简介</a></li>{/eq}
+                
+                {eq name="action" value="hunqing"}<li class="layui-nav-item navigation-margin layui-this"><a href="/index/hunqing">婚庆主题</a></li>
+                {else/}<li class="layui-nav-item navigation-margin"><a href="/index/hunqing">婚庆主题</a></li>{/eq}
+
+                {eq name="action" value="meishi"}<li class="layui-nav-item navigation-margin layui-this"><a href="/index/meishi">餐饮美食</a></li>
+                {else/}<li class="layui-nav-item navigation-margin"><a href="/index/meishi">餐饮美食</a></li>{/eq}
+                
+                {eq name="action" value="lianxi"}<li class="layui-nav-item navigation-margin layui-this"><a href="/index/lianxi">联系我们</a></li>
+                {else/}<li class="layui-nav-item navigation-margin"><a href="/index/lianxi">联系我们</a></li>{/eq}
+                
+                {eq name="action" value="zhoubian"}<li class="layui-nav-item navigation-margin layui-this"><a href="/index/zhoubian">酒店周边</a></li>
+                {else/}<li class="layui-nav-item navigation-margin"><a href="/index/zhoubian">酒店周边</a></li>{/eq}
+                
+            </ul>
+        </div>
+    </div>

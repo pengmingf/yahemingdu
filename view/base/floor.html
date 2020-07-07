@@ -1,0 +1,46 @@
+<div id="floor">
+    <span class='floor-left'>Copyright @ 2019-2020 永川雅禾铭都主题宴会酒店 www.yahemingdu.com<br />工信部备案号：渝ICP备19003431号</span>
+    <img class='floor-right' src='/static/img/1.jpg'>
+</div>
+
+<!-- <div id="dFoot">固定尾部100px</div> -->
+</body>
+<script>
+layui.use(['layer', 'form','element','carousel','util'], function(){
+    var layer = layui.layer;
+    var element = layui.element;
+    var form = layui.form;
+    var carousel = layui.carousel;
+    var util = layui.util;
+    util.fixbar({
+        bar1: '&#xe626;'
+        ,showHeight:100
+        ,click: function(type){
+            console.log(type);
+            if(type === 'bar1'){
+                layer.open({
+                    title:'联系方式:',
+                    content:'联系人:郝经理<br/>手机号:18712349867<br />座机:000000000'
+                });
+            }
+            if(type === 'bar2') {
+                alert('点击了2')
+            }
+        }
+    });
+    carousel.render({
+        elem: '#banner1'
+        ,width: '100%' //设置容器宽度
+        ,height:'100%'
+        ,arrow: 'hover' //始终显示箭头
+        ,anim: 'default' //切换动画方式
+        ,interval:5000
+    });
+    element.on('nav(navigat)', function(data){
+        // console.log(data); //得到当前点击的DOM对象
+    });
+    // layer.msg('Hello World');
+});
+</script>
+
+</html>
